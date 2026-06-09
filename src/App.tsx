@@ -28,7 +28,7 @@ export default function App() {
           </div>
           
           <a
-            href="https://forms.gle/REPLACE_WITH_YOUR_LINK"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfsVMFvaFmTCZt9SklLEZz2_wguwaWAahHItf45GeP6FqyF0A/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 bg-orange-950/40 hover:bg-orange-500/20 text-orange-400 border border-orange-500/30 hover:border-orange-500/60 rounded-full font-bold tracking-widest uppercase text-[10px] md:text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.1)] hover:shadow-[0_0_25px_rgba(249,115,22,0.25)] shrink-0 group"
