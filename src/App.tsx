@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useLexicon } from './hooks/useLexicon';
 import { Filters } from './components/Filters';
 import { Lexicon } from './components/Lexicon';
