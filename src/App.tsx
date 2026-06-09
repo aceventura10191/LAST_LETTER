@@ -2,6 +2,7 @@
 import { useLexicon } from './hooks/useLexicon';
 import { Filters } from './components/Filters';
 import { Lexicon } from './components/Lexicon';
+import { Plus } from 'lucide-react';
 
 export default function App() {
   const { filteredWords, isLoading, isCapped, filters, setFilters } = useLexicon();
@@ -16,13 +17,25 @@ export default function App() {
       </div>
 
       <div className="container mx-auto px-3 py-4 md:px-4 md:py-12 max-w-6xl flex flex-col gap-4 md:gap-8 flex-1 relative z-10 min-h-[100dvh] md:h-screen">
-        <header className="flex flex-col gap-0 md:gap-1 items-center md:items-start text-center md:text-left shrink-0">
-          <h1 className="text-4xl md:text-7xl font-light tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-500 to-red-600 drop-shadow-sm font-display uppercase">
-            Word Finder
-          </h1>
-          <p className="text-orange-200/80 font-medium tracking-wide text-xs md:text-sm">
-            Not so precise search engine <span className="text-orange-400 font-semibold">by Kay</span>
-          </p>
+        <header className="flex flex-col md:flex-row gap-4 md:gap-1 items-center justify-between text-center md:text-left shrink-0">
+          <div className="flex flex-col gap-0 md:gap-1 items-center md:items-start">
+            <h1 className="text-4xl md:text-7xl font-light tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-500 to-red-600 drop-shadow-sm font-display uppercase">
+              Word Finder
+            </h1>
+            <p className="text-orange-200/80 font-medium tracking-wide text-xs md:text-sm">
+              Not so precise search engine <span className="text-orange-400 font-semibold">by Kay</span>
+            </p>
+          </div>
+          
+          <a
+            href="https://forms.gle/REPLACE_WITH_YOUR_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 bg-orange-950/40 hover:bg-orange-500/20 text-orange-400 border border-orange-500/30 hover:border-orange-500/60 rounded-full font-bold tracking-widest uppercase text-[10px] md:text-xs transition-all shadow-[0_0_15px_rgba(249,115,22,0.1)] hover:shadow-[0_0_25px_rgba(249,115,22,0.25)] shrink-0 group"
+          >
+            <Plus size={16} strokeWidth={2.5} className="group-hover:rotate-90 transition-transform duration-300" />
+            Contribute
+          </a>
         </header>
 
         <main className="flex flex-col md:flex-row gap-4 md:gap-8 flex-1 pb-2 md:pb-8">
