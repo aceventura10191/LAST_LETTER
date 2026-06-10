@@ -17,10 +17,15 @@ export function HeroSection({ onScrollToTool }: HeroSectionProps) {
       </div>
 
       {/* Massive Heading */}
-      <h1 className="text-5xl md:text-8xl lg:text-[110px] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-amber-200 via-orange-400 to-red-600 drop-shadow-sm font-display uppercase leading-[0.85] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '150ms' }}>
+      <h1 className="text-5xl md:text-8xl lg:text-[110px] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-amber-200 via-orange-400 to-red-600 drop-shadow-sm font-display uppercase leading-[0.85] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '150ms' }}>
         Guessing is noise.<br className="hidden md:block" />
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-500">Strategy is signal.</span>
       </h1>
+
+      {/* Subtitle */}
+      <h2 className="text-orange-200/80 font-medium tracking-wide text-xs md:text-sm mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '225ms' }}>
+        Word Finder • Not so precise search engine <span className="text-orange-400 font-semibold">by Kay</span>
+      </h2>
 
       {/* Description */}
       <p className="max-w-2xl text-orange-200/70 text-sm md:text-base lg:text-lg font-light leading-relaxed mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '300ms' }}>
