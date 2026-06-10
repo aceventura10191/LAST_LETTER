@@ -11,8 +11,8 @@ export function AnalyticsGraph() {
     <div className="w-full bg-[#0c0704]/40 border border-orange-900/30 rounded-2xl p-3 md:p-8 backdrop-blur-md relative overflow-hidden shadow-[0_0_40px_rgba(234,88,12,0.05)]">
       {/* Title */}
       <div className="flex items-center justify-between mb-4 md:mb-8">
-        <h3 className="text-[10px] md:text-xs font-bold tracking-widest text-orange-500/70 uppercase">
-          Live <span className="text-orange-400">• Concurrent Players</span>
+        <h3 className="text-[10px] md:text-xs font-bold tracking-widest text-orange-400 uppercase">
+          Average Players
         </h3>
         <p className="text-[9px] md:text-[10px] font-bold tracking-widest text-zinc-500 uppercase hidden md:block">
           Last 7 Days • Rolimons Data
