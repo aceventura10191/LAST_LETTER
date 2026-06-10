@@ -38,8 +38,13 @@ export function Lexicon({ words, isLoading, isCapped }: LexiconProps) {
         className="flex-1 overflow-y-auto pr-1 md:pr-2 min-h-0 relative"
       >
         {isLoading ? (
-          <div className="flex h-full items-center justify-center text-orange-500/50 font-mono text-xs tracking-widest uppercase">
-            Indexing database...
+          <div className="flex flex-col gap-2 p-2">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="flex gap-2 w-full">
+                <div className="flex-1 h-10 md:h-12 bg-orange-900/20 rounded-md animate-pulse border border-orange-900/30" />
+                <div className="flex-1 h-10 md:h-12 bg-orange-900/20 rounded-md animate-pulse border border-orange-900/30" />
+              </div>
+            ))}
           </div>
         ) : words.length === 0 ? (
           <div className="flex h-full items-center justify-center text-red-500 font-mono text-xs tracking-widest uppercase text-center">
